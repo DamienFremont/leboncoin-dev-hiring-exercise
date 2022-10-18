@@ -8,14 +8,11 @@ feat(fizzbuzz): test tdd (#mvp)
 feat(fizzbuzz): api (#mvp)
 feat(fizzbuzz): impl (#mvp)
 refactoring
+doc: slides + README.md (#mvp)
 
 --- 
 
 ## TODO
-
-### MVP
-
-doc: slides + README.md (#mvp)
 
 ### PROD
 build(prodready): postman (#prod)
