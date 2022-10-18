@@ -4,6 +4,7 @@ TASKS.md
 ## DONE
 
 feat(fizzbuzz): model (#mvp)
+feat(fizzbuzz): test tdd (#mvp)
 
 --- 
 
@@ -11,7 +12,6 @@ feat(fizzbuzz): model (#mvp)
 
 ### MVP
 
-feat(fizzbuzz): test tdd (#mvp)
 feat(fizzbuzz): api (#mvp)
 refactoring
 doc: slides + README.md (#mvp)
