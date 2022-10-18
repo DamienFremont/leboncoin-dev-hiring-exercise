@@ -12,6 +12,9 @@ import static com.example.demo.helpers.TestDatas.buildCase1Request;
 import static com.example.demo.helpers.TestDatas.buildCase1Response;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test
+ */
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class ExerciseApplicationTests {
 

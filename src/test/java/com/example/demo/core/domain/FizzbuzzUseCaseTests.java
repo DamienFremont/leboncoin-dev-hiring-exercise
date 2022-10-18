@@ -7,6 +7,9 @@ import static com.example.demo.helpers.TestDatas.buildCase1Request;
 import static com.example.demo.helpers.TestDatas.buildCase1Response;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
+/**
+ * Test
+ */
 class FizzbuzzUseCaseTests {
 
     FizzbuzzUseCase classToTest;
