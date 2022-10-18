@@ -1,23 +1,29 @@
-package com.example.demo.infrastructure;
+package com.example.demo.core.application;
 
-import com.example.demo.core.application.ComputeFizzbuzzOutboundPort;
 import lombok.AllArgsConstructor;
 
 import java.util.ArrayList;
 
 /**
- * Service Adapter
- *
+ * Service
+ * <p>
+ * fizzBuzz.
+ * see https://en.wikipedia.org/wiki/Fizz_buzz
+ * <p>
  * Approach: String Concatenation
  */
 @AllArgsConstructor
-public class FizzbuzzCalculator implements ComputeFizzbuzzOutboundPort {
+public class FizzbuzzCalculator {
 
     private Integer int1;
     private Integer int2;
     private String str1;
     private String str2;
 
+    /**
+     * @param limit: number list size.
+     * @return new list of numbers and strings
+     */
     public String[] fizzBuzz(int limit) {
         var answer = new ArrayList<String>();
 

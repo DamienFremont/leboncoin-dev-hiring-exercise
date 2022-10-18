@@ -1,7 +1,7 @@
 package com.example.demo.core.domain;
 
 import com.example.demo.core.application.ComputeFizzbuzzInboundPort;
-import com.example.demo.infrastructure.FizzbuzzCalculator;
+import com.example.demo.core.application.FizzbuzzCalculator;
 import org.springframework.stereotype.Component;
 
 /**

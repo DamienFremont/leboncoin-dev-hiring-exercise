@@ -7,6 +7,7 @@ feat(fizzbuzz): model (#mvp)
 feat(fizzbuzz): test tdd (#mvp)
 feat(fizzbuzz): api (#mvp)
 feat(fizzbuzz): impl (#mvp)
+refactoring
 
 --- 
 
@@ -14,10 +15,10 @@ feat(fizzbuzz): impl (#mvp)
 
 ### MVP
 
-refactoring
 doc: slides + README.md (#mvp)
 
 ### PROD
+build(prodready): postman (#prod)
 build(prodready): logs (#prod)
 build(prodready): health api (#prod)
 build(prodready): api auth (#prod)
