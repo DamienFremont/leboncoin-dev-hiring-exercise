@@ -1,5 +1,6 @@
 package com.example.demo.infrastructure;
 
+import com.example.demo.configuration.Role;
 import com.example.demo.core.application.ComputeFizzbuzzInboundPort;
 import com.example.demo.core.application.WriteFizzbuzzInboundPort;
 import com.example.demo.core.domain.FizzbuzzRequest;
@@ -10,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 
 import static java.lang.String.format;
@@ -20,6 +22,7 @@ import static java.lang.String.format;
 @Slf4j
 @RestController
 @RequestMapping("/api/v1")
+@RolesAllowed(Role.FIZZBUZZ_ADMIN)
 public class FizzbuzzApiController implements WriteFizzbuzzInboundPort {
 
     @Autowired

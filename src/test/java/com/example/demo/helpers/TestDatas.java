@@ -2,6 +2,11 @@ package com.example.demo.helpers;
 
 import com.example.demo.core.domain.FizzbuzzRequest;
 import com.example.demo.core.domain.FizzbuzzResponse;
+import org.springframework.util.ResourceUtils;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.Files;
 
 /**
  * Helper for tests
@@ -20,5 +25,16 @@ public class TestDatas {
      */
     public static FizzbuzzRequest buildCase1Request() {
         return new FizzbuzzRequest(3, 5, 16, "fizz", "buzz");
+    }
+
+    public static String jwtTokenEncoded() {
+        try {
+            var file = ResourceUtils.getFile(ResourceUtils.CLASSPATH_URL_PREFIX + "token-encoded.txt");
+            var content = new String(Files.readAllBytes(file.toPath()));
+            return content;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }

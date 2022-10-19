@@ -1,3 +1,5 @@
 spring.application.version: 0.0.1-SNAPSHOT
 
 logging.level.ROOT: DEBUG
+
+secret: mySecretKey

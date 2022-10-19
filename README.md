@@ -20,6 +20,8 @@ Base sur les specs [SPECS.md](SPECS.md)
 
 ## Usage
 
+### 1. Start API server
+
 Dev Env
 ```bash
 .\mvnw spring-boot:run 
@@ -29,6 +31,12 @@ Prod Env
 ```bash
 .\mvnw spring-boot:run "-Dspring-boot.run.profiles=prod"
 ```
+
+### 2. Call API Server
+
+- using the postman collection at [./postman](./postman)
+- PROD: using a new jwt token at https://jwt.io/ (see application-prod.xml)
+
 
 ---
 

@@ -1,3 +1,5 @@
 spring.application.version: 1.0.0
 
 logging.level.ROOT: INFO
+
+secret: Wt1JV0sIYgymRr8al139Oxn33xW4fWXm

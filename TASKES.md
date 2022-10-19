@@ -27,17 +27,15 @@ build(prodready): profiles (#prod)
 
 build(prodready): health api (#prod)
 
+build(prodready): api auth (#prod)
+
 --- 
 
 ## TODO
 
 ### PROD
 
-build(prodready): api auth (#prod)
-
 build(prodready): swagger (#prod)
-
-refactoring
 
 doc: slides + README.md (#prod)
 
