@@ -47,7 +47,6 @@ doc: slides + README.md (#bonus)
 
 ## BONUS
 
-
 feat(fizzbuzz): bdd scenario (#bonus)
 
 feat(fizzbuzz): bdd impl (#bonus)

@@ -40,7 +40,6 @@ public class ExerciseApplicationTests {
         var entity = new HttpEntity<FizzbuzzRequest>(request, headers);
         // WHEN
         var body = restTemplate.exchange("/api/v1/fizzbuzz", HttpMethod.POST, entity, FizzbuzzResponse.class);
-//        var body = restTemplate.postForEntity("/api/v1/fizzbuzz", request, FizzbuzzResponse.class);
         // THEN
         assertEquals(HttpStatus.OK, body.getStatusCode());
         assertArrayEquals(expected.getList(), body.getBody().getList());
