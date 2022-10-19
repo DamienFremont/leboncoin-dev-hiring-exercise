@@ -21,13 +21,15 @@ doc: slides + README.md (#mvp)
 
 build(prodready): postman (#prod)
 
+build(prodready): logs + banner (#prod)
+
 --- 
 
 ## TODO
 
 ### PROD
 
-build(prodready): logs (#prod)
+build(prodready): profiles (#prod)
 
 build(prodready): health api (#prod)
 
