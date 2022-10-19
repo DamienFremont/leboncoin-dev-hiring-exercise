@@ -9,7 +9,7 @@ public interface MetricInboundPort {
 
     void increaseCount(String request);
 
-    Map getFullMetric();
+    Map<String, Integer> getFullMetric();
 
     Map.Entry<String, Integer> getMostUsedRequest();
 }

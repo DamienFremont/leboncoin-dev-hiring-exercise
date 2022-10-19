@@ -25,7 +25,7 @@ public class MetricService implements MetricInboundPort {
         metricMap.put(request, count);
     }
 
-    public Map getFullMetric() {
+    public Map<String, Integer> getFullMetric() {
         return metricMap;
     }
 

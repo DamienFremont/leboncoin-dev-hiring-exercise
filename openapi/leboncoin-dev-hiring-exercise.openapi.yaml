@@ -16,7 +16,7 @@ paths:
     post:
       tags:
         - fizzbuzz
-      summary: write fizzbuzz
+      summary: write fizzbuzz (AUTH JWT)
       operationId: writeFizzbuzz
       security:
         - bearerAuth: []
@@ -37,11 +37,47 @@ paths:
           description: Bad Request
         '500':
           description: Server Error
-          
+
+  /metric:
+    get:
+      tags:
+        - metric
+      summary: get all metrics (AUTH JWT)
+      operationId: getMetric
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MetricListResponse'
+        '500':
+          description: Server Error
+
+  /metric/most-used-request:
+    get:
+      tags:
+        - metric
+      summary: get the most used request (AUTH JWT)
+      operationId: getMetricMostUsedRequest
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MetricItemResponse'
+        '500':
+          description: Server Error
+
 components:
 
   schemas:
-  
+
     FizzbuzzRequest:
       type: object
       properties:
@@ -53,21 +89,39 @@ components:
           example: 5
         str1:
           type: string
-          example: "fizz" 
+          example: "fizz"
         str2:
           type: string
-          example: "buzz" 
+          example: "buzz"
         limit:
           type: integer
           example: 100
-          
+
     FizzbuzzResponse:
       type: object
       properties:
         list:
           type: array
           items:
-            type: string      
+            type: string
+
+    MetricListResponse:
+      type: object
+      properties:
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/MetricItemResponse'
+
+    MetricItemResponse:
+      type: object
+      properties:
+        request:
+          type: string
+          example: "/fizzbuzz:FizzbuzzRequest(int1=3, int2=3, limit=16, str1=fizz, str2=buzz)"
+        count:
+          type: integer
+          example: 5
 
   securitySchemes:
     bearerAuth:

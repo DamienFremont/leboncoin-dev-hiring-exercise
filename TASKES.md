@@ -33,7 +33,13 @@ build(prodready): swagger (#prod)
 
 doc: slides + README.md (#prod)
 
+## BONUS
+
 feat(stats): stats api (#bonus)
+
+feat(stats): swagger (#bonus)
+
+doc: slides + README.md (#bonus)
 
 --- 
 
@@ -42,10 +48,6 @@ feat(stats): stats api (#bonus)
 ## BONUS
 
 
-feat(stats): swagger (#bonus)
-
-refactoring
-
-doc: slides + README.md (#bonus)
-
 feat(fizzbuzz): bdd scenario (#bonus)
+
+feat(fizzbuzz): bdd impl (#bonus)
