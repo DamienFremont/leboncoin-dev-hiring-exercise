@@ -20,8 +20,14 @@ Base sur les specs [SPECS.md](SPECS.md)
 
 ## Usage
 
+Dev Env
 ```bash
 .\mvnw spring-boot:run 
+```
+
+Prod Env
+```bash
+.\mvnw spring-boot:run "-Dspring-boot.run.profiles=prod"
 ```
 
 ---
