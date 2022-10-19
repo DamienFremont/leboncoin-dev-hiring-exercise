@@ -25,7 +25,8 @@ public class ExerciseApplication {
                         "http://localhost:%s\n" +
                         "GET http://localhost:%s/health\n" +
                         "POST http://localhost:%s/api/v1/fizzrule\n" +
-                        "GET http://localhost:%s/api/v1/stats\n",
-                port, port, port, port));
+                        "GET http://localhost:%s/api/v1/metric\n" +
+                        "GET http://localhost:%s/api/v1/metric/ost-used-request\n",
+                port, port, port, port, port));
     }
 }

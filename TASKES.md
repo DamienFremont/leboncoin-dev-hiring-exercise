@@ -33,13 +33,14 @@ build(prodready): swagger (#prod)
 
 doc: slides + README.md (#prod)
 
+feat(stats): stats api (#bonus)
+
 --- 
 
 ## TODO
 
 ## BONUS
 
-feat(stats): stats api (#bonus)
 
 feat(stats): swagger (#bonus)
 

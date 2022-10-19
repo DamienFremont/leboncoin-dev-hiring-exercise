@@ -1,6 +1,7 @@
 package com.example.demo.infrastructure;
 
 import com.example.demo.core.application.ComputeFizzbuzzInboundPort;
+import com.example.demo.core.application.MetricInboundPort;
 import com.example.demo.core.domain.FizzbuzzRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -33,15 +34,17 @@ class FizzbuzzApiControllerTests {
 
     @MockBean
     ComputeFizzbuzzInboundPort fizzbuzzUseCase;
+    @MockBean
+    MetricInboundPort metricService;
 
     @Autowired
     MockMvc mockMvc;
 
     @Test
-    public void test_writeFizzBuzz_exerciceUseCase_HTTP200() throws Exception {
+    public void test_writeFizzBuzz_exerciceUseCase_HTTP201() throws Exception {
         // GIVEN
         var response = buildCase1Response();
-        var request = buildCase1Request() ;
+        var request = buildCase1Request();
         when(fizzbuzzUseCase.writeFizzbuzz(any())).thenReturn(response);
         // WHEN
         mockMvc.perform(post("/api/v1/fizzbuzz")
