@@ -63,3 +63,5 @@ See [./docs](docs))
 ![alt text](docs/Diapositive4.PNG)
 
 ![alt text](docs/Diapositive5.PNG)
+
+![alt text](docs/Diapositive6.PNG)

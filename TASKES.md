@@ -25,14 +25,13 @@ build(prodready): logs + banner (#prod)
 
 build(prodready): profiles (#prod)
 
+build(prodready): health api (#prod)
+
 --- 
 
 ## TODO
 
 ### PROD
-
-
-build(prodready): health api (#prod)
 
 build(prodready): api auth (#prod)
 
