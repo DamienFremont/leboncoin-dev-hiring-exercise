@@ -31,13 +31,11 @@ build(prodready): api auth (#prod)
 
 build(prodready): swagger (#prod)
 
+doc: slides + README.md (#prod)
+
 --- 
 
 ## TODO
-
-### PROD
-
-doc: slides + README.md (#prod)
 
 ## BONUS
 
