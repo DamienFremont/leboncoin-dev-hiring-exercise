@@ -31,8 +31,8 @@ public class FizzbuzzApiController implements WriteFizzbuzzInboundPort {
     @PostMapping("/fizzbuzz")
     @ResponseStatus(HttpStatus.OK)
     @Override
-    public FizzbuzzResponse writefizzbuzz(@Valid @RequestBody FizzbuzzRequest request) {
-        log.info(format("writefizzbuzz() request=%s", request.toString()));
-        return fizzbuzzUseCase.writefizzbuzz(request);
+    public FizzbuzzResponse writeFizzbuzz(@Valid @RequestBody FizzbuzzRequest request) {
+        log.info(format("writeFizzbuzz() request=%s", request.toString()));
+        return fizzbuzzUseCase.writeFizzbuzz(request);
     }
 }

@@ -73,3 +73,5 @@ See [./docs](docs))
 ![alt text](docs/Diapositive5.PNG)
 
 ![alt text](docs/Diapositive6.PNG)
+
+![alt text](docs/Diapositive7.PNG)

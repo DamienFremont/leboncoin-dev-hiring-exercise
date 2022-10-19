@@ -1,0 +1,76 @@
+openapi: 3.0.3
+
+info:
+  title: LeBonCoin Dev Hiring Exercise API
+  version: 0.0.1
+servers:
+  - url: http://localhost:8080/api/v1
+
+tags:
+  - name: fizzbuzz
+    description: Everything about fizzbuzz
+
+paths:
+
+  /fizzbuzz:
+    post:
+      tags:
+        - fizzbuzz
+      summary: write fizzbuzz
+      operationId: writeFizzbuzz
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FizzbuzzRequest'
+        required: true
+      responses:
+        '201':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FizzbuzzResponse'
+        '400':
+          description: Bad Request
+        '500':
+          description: Server Error
+          
+components:
+
+  schemas:
+  
+    FizzbuzzRequest:
+      type: object
+      properties:
+        int1:
+          type: integer
+          example: 3
+        int2:
+          type: integer
+          example: 5
+        str1:
+          type: string
+          example: "fizz" 
+        str2:
+          type: string
+          example: "buzz" 
+        limit:
+          type: integer
+          example: 100
+          
+    FizzbuzzResponse:
+      type: object
+      properties:
+        list:
+          type: array
+          items:
+            type: string      
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT 

@@ -25,7 +25,7 @@ class FizzbuzzUseCaseTests {
         var expected = buildCase1Response();
         var request = buildCase1Request() ;
         // WHEN
-        var actual = classToTest.writefizzbuzz(request);
+        var actual = classToTest.writeFizzbuzz(request);
         // THEN
         assertArrayEquals(expected.getList(), actual.getList());
     }

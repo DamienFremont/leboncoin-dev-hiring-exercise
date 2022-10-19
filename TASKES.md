@@ -29,13 +29,13 @@ build(prodready): health api (#prod)
 
 build(prodready): api auth (#prod)
 
+build(prodready): swagger (#prod)
+
 --- 
 
 ## TODO
 
 ### PROD
-
-build(prodready): swagger (#prod)
 
 doc: slides + README.md (#prod)
 

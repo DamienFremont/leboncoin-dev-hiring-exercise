@@ -8,5 +8,5 @@ import com.example.demo.core.domain.FizzbuzzResponse;
  */
 public interface WriteFizzbuzzInboundPort {
 
-    FizzbuzzResponse writefizzbuzz(FizzbuzzRequest request);
+    FizzbuzzResponse writeFizzbuzz(FizzbuzzRequest request);
 }

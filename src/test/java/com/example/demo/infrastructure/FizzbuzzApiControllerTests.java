@@ -42,7 +42,7 @@ class FizzbuzzApiControllerTests {
         // GIVEN
         var response = buildCase1Response();
         var request = buildCase1Request() ;
-        when(fizzbuzzUseCase.writefizzbuzz(any())).thenReturn(response);
+        when(fizzbuzzUseCase.writeFizzbuzz(any())).thenReturn(response);
         // WHEN
         mockMvc.perform(post("/api/v1/fizzbuzz")
                         .content(asJsonString(request))

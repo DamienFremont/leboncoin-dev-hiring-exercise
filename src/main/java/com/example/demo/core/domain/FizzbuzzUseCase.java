@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class FizzbuzzUseCase implements ComputeFizzbuzzInboundPort {
 
     @Override
-    public FizzbuzzResponse writefizzbuzz(FizzbuzzRequest request) {
+    public FizzbuzzResponse writeFizzbuzz(FizzbuzzRequest request) {
         // INIT
         log.debug("init calculator...");
         var calculator = getCalculator(request);
