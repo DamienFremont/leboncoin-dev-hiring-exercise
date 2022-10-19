@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "a13d67c6-0ef4-4b97-a5bb-a1c039f3b32d",
+		"name": "leboncoin-dev-hiring-exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23843214"
+	},
+	"item": [
+		{
+			"name": "fizzbuzz.write (16) : 200",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"int1\": 3,\r\n    \"int2\": 3,\r\n    \"str1\": \"fizz\",\r\n    \"str2\": \"buzz\",\r\n    \"limit\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fizzbuzz.write (EMPTY) : 400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fizzbuzz.write (NULL) : 400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fizzbuzz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fizzbuzz"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
